@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Sign-Up Page</title>
+        <style>
+            body{
+                text-align: center;
+            }
+            form{
+                border:10px solid black ;
+                margin:40px 300px;
+                padding:20px 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+            }
+            h1{
+                font-weight: bold;
+                color:maroon;
+                font-size: 40px;
+            }
+            input[type=submit]{
+                background-color: green;
+                color:white;
+                height:40;
+                width: 60;
+            }
+            a{
+                font-size: medium;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="signup.php" method="post">
+            <h1>Sign Up</h1>
+            <br>
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+            <label for="confirm_password">Confirm your Password: </label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+            <br><br>
+            <input type="submit" name="submit" value="submit">
+            <a href="login.html">Back</a>
+
+        </form>
+    </body>
+</html>

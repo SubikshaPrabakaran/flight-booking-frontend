@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+            body{
+                text-align: center;
+            }
+            form{
+                border:10px solid black ;
+                margin:40px 300px;
+                padding:20px 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 35px;
+            }
+            h1{
+                font-weight: bold;
+                color:maroon;
+                font-size: 40px;
+            }
+            input[type=submit],[type=button]{
+                background-color: green;
+                color:white;
+                height:40;
+                width: 60;
+            }
+            a{
+                font-size: medium;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="login.php" method="post">
+            <h1>Existing users Login here</h1>
+            <br>
+            <label for="uname">Username:</label>
+            <input type="text" id="uname" name="uname">
+            <br><br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="password">
+            <br><br>
+            <input type="submit" name="submit" value="Login">
+            <hr>
+            <label>New to website? Click here to sign-up &nbsp;</label>
+            <input type="button" name="submit" value="Sign-up">
+            <a href="index.html">Back</a>
+        </form>
+    </body>
+</html>

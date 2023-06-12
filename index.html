@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title> Flight Booking</title>
+    <style>
+           body{
+                text-align: center;
+            }
+            form{
+                border:10px solid black ;
+                margin:40px 300px;
+                padding:20px 20px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 35px;
+            }
+            input[type=button]{
+                background-color: green;
+                color:white;
+                height:40;
+                width: 60;
+            }
+            label{
+                display:block;
+            }
+     </style>
+</head>
+<body>
+    <form>
+        <label>Are you a user or an admin? &nbsp;</label><br>
+        <input type="button" name="user" value="User" onclick="window.location.href='login.html'">
+        <br><br>
+        <input type="button" name="admin" value="Admin" onclick="window.location.href='admin.html'">
+    </form>
+</body>
+</html>

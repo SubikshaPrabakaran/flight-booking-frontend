@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Admin Login Page</title>
+        <style>
+            body{
+                text-align: center;
+            }
+            form{
+                border:10px solid black ;
+                margin:40px 300px;
+                padding:20px 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 35px;
+            }
+            h1{
+                font-weight: bold;
+                color:maroon;
+                font-size: 40px;
+            }
+            input[type=submit],[type=button]{
+                background-color: green;
+                color:white;
+                height:40;
+                width: 60;
+            }
+            a{
+                font-size: medium;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="admin.php" method="post">
+            <h1>Admins Login here</h1>
+            <br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <br><br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="password">
+            <br><br>
+            <input type="submit" name="submit" value="Login">
+            <a href="index.html">Back</a>
+        </form>
+    </body>
+</html>

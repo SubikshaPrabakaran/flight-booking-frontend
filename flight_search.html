@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight Search</title>
+  <style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+h1 {
+  text-align: center;
+}
+label {
+  display: block;
+  margin-top: 10px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+input[type="submit"] {
+  background-color: #008CBA;
+}
+  </style>
+</head>
+<body>
+  <form action="flight_search.php" method="post">
+    <div class="container">
+      <h1>Flight Search</h1>
+      <p>Please enter your departure and arrival airports, departure date, and number of passengers.</p>
+      <hr>
+      <label for="departure_airport">Departure Airport</label>
+      <input type="text" name="departure_airport" id="departure_airport">
+      <label for="arrival_airport">Arrival Airport</label>
+      <input type="text" name="arrival_airport" id="arrival_airport">
+      <label for="departure_date">Departure Date</label>
+      <input type="date" name="departure_date" id="departure_date">
+      <label for="number_of_passengers">Number of Passengers</label>
+      <input type="number" name="number_of_passengers" id="number_of_passengers">
+      <hr>
+      <input type="submit" value="Search Flights">
+    </div>
+  </form>
+</body>
+</html>
